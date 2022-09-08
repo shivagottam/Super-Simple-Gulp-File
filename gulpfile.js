@@ -13,8 +13,8 @@ gulp.task('sass', function(){
         .pipe(cssnano()) // minify CSS
         .pipe(gulp.dest('dist')); // put final CSS in dist folder
 });
-gulp.task('js', function(){
-const sass = require('gulp-sass')(require('sass'));
+#gulp.task('js', function(){
+#const sass = require('gulp-sass')(require('sass'));
 });
 
 // JS task: concatenates and uglifies JS files to script.js
@@ -31,9 +31,10 @@ gulp.task('watch', function(){
     gulp.watch('app/js/**/*.js', gulp.series('js'));    
 });
 
-// Watch task: watch SCSS and JS files for changes
+// Watch task: watch CSS and JS files for changes
 gulp.task('css', function(){
     gulp.watch('app/*.css', gulp.series('css'));
+    gulp.watch('app/js/**/*.js', gulp.series('js')); 
 });
 
 // Default task
