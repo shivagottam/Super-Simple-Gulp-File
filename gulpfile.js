@@ -15,7 +15,7 @@ gulp.task('sass', function(){
 });
 
 gulp.task('js', function(){
-const sass = require('gulp-sass')(require('sass'));
+    const sass = require('gulp-sass')(require('sass'));
 });
 
 // JS task: concatenates and uglifies JS files to script.js
