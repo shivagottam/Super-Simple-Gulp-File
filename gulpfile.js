@@ -27,5 +27,10 @@ gulp.task('watch', function(){
     gulp.watch('app/js/**/*.js', gulp.series('js'));    
 });
 
+// Watch task: watch SCSS and JS files for changes
+gulp.task('css', function(){
+    gulp.watch('app/*.css', gulp.series('css'));
+});
+
 // Default task
-gulp.task('default', gulp.series('sass', 'js', 'watch'));
+gulp.task('default', gulp.series('sass', 'js', 'watch','css'));
