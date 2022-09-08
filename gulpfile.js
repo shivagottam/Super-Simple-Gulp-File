@@ -13,8 +13,13 @@ gulp.task('sass', function(){
         .pipe(cssnano()) // minify CSS
         .pipe(gulp.dest('dist')); // put final CSS in dist folder
 });
-gulp.task('js', function(){
+gulp.task('sass', function(){
 const sass = require('gulp-sass')(require('sass'));
+    gulp.task('sass', () =>
+  sass('source/file.scss') // not .pipe(sass())
+    .on('error', sass.logError)
+    .pipe(gulp.dest('result'))
+);
 });
 
 // JS task: concatenates and uglifies JS files to script.js
