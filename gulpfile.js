@@ -4,6 +4,7 @@ var cssnano = require('gulp-cssnano');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var sass = require('gulp-sass')(require('sass'));
 
 // Sass task: compiles the style.scss file into style.css
 gulp.task('sass', function(){
@@ -11,6 +12,9 @@ gulp.task('sass', function(){
         .pipe(sass()) // compile SCSS to CSS
         .pipe(cssnano()) // minify CSS
         .pipe(gulp.dest('dist')); // put final CSS in dist folder
+});
+gulp.task('js', function(){
+const sass = require('gulp-sass')(require('sass'));
 });
 
 // JS task: concatenates and uglifies JS files to script.js
