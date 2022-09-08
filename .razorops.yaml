@@ -1,0 +1,13 @@
+tasks:
+  build-deps:
+    runner: node:10
+    steps:
+    - checkout
+    - run: node --version
+    # - run: npm --version
+    - run: npm install
+    - run: npm --version
+    - run: npm install -g gulp-cli
+    - run: gulp --version
+    - run: npm install gulp-sass --save-dev
+    - run: gulp sass
