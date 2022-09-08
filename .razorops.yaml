@@ -10,4 +10,5 @@ tasks:
     - run: npm install -g gulp-cli
     - run: gulp --version
     - run: npm install gulp-sass --save-dev
+    - run: npm install -g sass
     - run: gulp sass
