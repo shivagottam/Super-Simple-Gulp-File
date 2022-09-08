@@ -9,8 +9,8 @@ tasks:
     - run: npm --version
     - run: npm install -g gulp-cli
     - run: gulp --version
-    - run: npm cache clear --force
-    - run: npm install sass
-    - run: npm i -g sass
+   # - run: npm cache clear --force
+   # - run: npm install sass
+   # - run: npm i -g sass
     - run: npm i sass --save-dev
     - run: gulp sass
