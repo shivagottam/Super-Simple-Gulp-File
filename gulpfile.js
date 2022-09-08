@@ -13,7 +13,7 @@ gulp.task('sass', function(){
         .pipe(cssnano()) // minify CSS
         .pipe(gulp.dest('dist')); // put final CSS in dist folder
 });
-gulp.task('sass', function(){
+gulp.task('js', function(){
 const sass = require('gulp-sass')(require('sass'));
 });
 
