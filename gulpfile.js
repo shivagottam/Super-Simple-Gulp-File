@@ -14,9 +14,9 @@ gulp.task('sass', function(){
         .pipe(gulp.dest('dist')); // put final CSS in dist folder
 });
 
-gulp.task('js', function(){
-    const sass = require('gulp-sass')(require('sass'));
-});
+//gulp.task('js', function(){
+ //   const sass = require('gulp-sass')(require('sass'));
+//});
 
 // JS task: concatenates and uglifies JS files to script.js
 gulp.task('js', function(){
