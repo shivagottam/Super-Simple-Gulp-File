@@ -1,7 +1,7 @@
 // Initialize modules
 var gulp = require('gulp');
 var cssnano = require('gulp-cssnano');
-var sass = require('gulp-sass');
+//var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 //const gulp = require('gulp');
